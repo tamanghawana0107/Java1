@@ -2,7 +2,7 @@
 public class Hawana{
     public static void main(String[] args)
     {
-        System.out.println("\n");
+        System.out.print("\n");
         System.out.println("Name of the organization: Bajra Clothing Store");
         System.out.print("\n");
         System.out.println("Address:");
@@ -13,5 +13,6 @@ public class Hawana{
         System.out.println("\nContact Information:");
         System.out.println("----Mobile Number: 9745332324");
         System.out.println("----Email: bajraclothing@gmail.com");
+        System.out.print("\n");
     }
 }
