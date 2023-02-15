@@ -9,17 +9,21 @@ public class Assignment2{
         boolean check;
         double tempK,tempC,weight;
         char a;
-        System.out.println("Enter the name of supervisor:");
-        name = obj.nextLine();
-        System.out.println("The name of the supervisor is :" + name);
-
+    
         System.out.println("\n");
         System.out.println("Enter the total number of employees:");
         num = obj.nextInt();
         System.out.println("The total number of employees are : " + num);
+
+        obj.nextLine();     //consumes dangling newline character
         
         System.out.println("\n");
-        System.out.println("Enter how many times the Nuclear waste is removed from the core:");
+        System.out.println("Enter the name of supervisor:");
+        name = obj.nextLine();
+        System.out.println("The name of the supervisor is :" + name);
+
+        
+        System.out.println("\nEnter how many times the Nuclear waste is removed from the core:");
         waste = obj.nextInt();
         System.out.println("The Nuclear waste was removed from the core " + waste + " times");
 
@@ -56,5 +60,7 @@ public class Assignment2{
         System.out.println("\nThe core average temperature of the Nuclear Reactor (Celsius) is: " + tempC + "C");
         tempK = tempC + 273.15;
         System.out.println("\nThe core average temperature of the Nulcear Reactor (Kelvin) is: " + tempK + "K\n");
+
+        obj.close();
     }
 }
