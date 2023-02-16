@@ -6,7 +6,6 @@ public class Assignment2{
         Scanner obj = new Scanner(System.in);
         String name;
         int num, waste;
-        boolean check;
         double tempK,tempC,weight;
         char a;
     
@@ -31,12 +30,12 @@ public class Assignment2{
         weight = obj.nextDouble();
         System.out.println("The total weight of the waste produced in every 1 week is: " + weight + " kg");
 
-        // label:
+        
         System.out.println("\n");
         System.out.println("Is the Electric Motor being replaced every 18 days?");
         System.out.println("Press 'y' for yes");
         System.out.println("Press 'n' for no");
-        a = obj.next().charAt(0);
+        a = obj.next().charAt(0);           //it takes character at the '0' place
         if(a == 'y')
         {
             System.out.println("\n");
@@ -53,7 +52,7 @@ public class Assignment2{
         {
             System.out.println("\n");
             System.out.println("!!! Invalid input given !!!\n");
-            // continue label;
+    
         }
         System.out.println("Enter the core average temperature (Celsius) of the Nuclear Reactor :");
         tempC = obj.nextDouble();
