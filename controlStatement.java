@@ -8,7 +8,7 @@ public class controlStatement
     public static void main(String[] args)
     {
         Scanner obj = new Scanner(System.in);
-        int age;
+        /*int age;
         System.out.println("Enter your age:");
         age = obj.nextInt();
         switch(age)
@@ -45,10 +45,26 @@ public class controlStatement
             break;
         }while(age == 60);
         
+        [foreach loop]
         String[] cars = {"Volvo,BMW,SCODA"};
         for (String i : cars)
         {
             System.out.println("I wanna buy" + i);
+        }*/
+        int money = 1;
+        int i=1;
+        /*for(int i = 1; i<=10; i++)
+        {
+            money = money * i;  //money *= i
+            System.out.println(money); 
         }
+        System.out.println("Total result =" + money);*/
+        while(i <=10)
+        {
+            money *= i;
+            System.out.println(money);
+            i++;
+        }
+        System.out.println("Total result " + money);
     }
 }
