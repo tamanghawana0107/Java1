@@ -1,9 +1,10 @@
 public class classAndObject{
+    public int width =10; // attribute of class
     public static void main(String[] args)
     {
-        int width =10;       // attribute of class
+       
         classAndObject cO = new classAndObject();
-        System.out.println("Width = " + width);
+        System.out.println("Width = " + cO.width);
     }
    
 }
