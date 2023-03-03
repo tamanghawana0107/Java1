@@ -1,28 +1,51 @@
-public class triangle {
-    public int result1 , result2, result3;
-    public int a = 10;
-    public int b = 20;
-    public int c = 30;
-    public int d = 40;
-    public int e = 50;
-    public triangle peri = new triangle();
-    triangle()
+public class Triangle {
+    private int a,b,c,d,e;
+    public Triangle()
     {
-        // area 
+        a = 10;
+        b = 20;
+        c = 30;
     }
-    triangle()
+    public Triangle (int x , int y, int z, int w)
     {
-        peri.result1 = peri.a+ peri.b + peri.c;
-        peri.result2 = peri.a + peri.b + peri.c + peri.d;
-        peri.result3 = peri.a + peri.b + peri.c + peri.d + peri.e;
+        a = x;
+        b = y;
+        c = z;
+        d = w;
+    }
+    public Triangle (int x , int y, int z, int w, int r)
+    {
+
+        a = x;
+        b = y;
+        c = z;
+        d = w;
+        e = r;
+    }
+    public void area()
+    {
+        double result, result2;
+        result = b * c;
+        result2 =result/2;
+        System.out.println("Area of the triangle is " + result2);
+    }
+    public void peri()
+    {
+        int ans;
+        ans = a+b+c+d+e;
+        System.out.println("Perimeter of triangle is :" + ans);
     }
     public static void main(String[] args)
     {
-        
-        
-        System.out.println("Perimeter of 3 side triangle = " + peri.result1);
-        System.out.println("Perimeter of 4 side triangle = " + peri.result2);
-        System.out.println("Perimeter of 5 side triangle = " + peri.result3);
+        Triangle obj = new Triangle();
+        Triangle obj2 = new Triangle(10,20,30,40);
+        Triangle obj3 = new Triangle(7,5,3,2,1);
+        obj.area();
+        obj.peri();
+        obj2.area();
+        obj2.peri();
+        obj3.area();
+        obj3.peri();
         
     }
 
