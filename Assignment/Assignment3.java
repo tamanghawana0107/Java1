@@ -1,7 +1,6 @@
 // Guessing Game
 import java.util.Scanner;
 import java.util.Random;
-import java.lang.*;
 public class Assignment3{
     public static void main(String[] args)
     {
@@ -69,5 +68,6 @@ public class Assignment3{
             System.out.println("\n\n!!! Invalid input given !!!\n");
             break;
         }
+        input.close();
     }
 }

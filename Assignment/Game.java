@@ -1,5 +1,4 @@
 // Scissor , paper , rock game
-import java.io.*;
 import java.util.Scanner;
 import java.util.Random;
 public class Game{
@@ -110,5 +109,6 @@ public class Game{
                 break;
                 
         } 
+        input.close();
     }
 }
