@@ -30,7 +30,7 @@ public class Assignment3{
                     System.out.print("\nPick a number between 1 to 10");
                     System.out.print("\nEnter the guess number: ");
                     ans = input.nextInt();
-                    if(ans == 1 || ans == 2 || ans == 3 || ans == 4 || ans == 5 || ans == 6 || ans == 7 || ans == 8 || ans ==9 || ans == 10)
+                    if(ans <= 10)
                     {
                         System.out.println("Your Guess is --> " + ans);
                     }
