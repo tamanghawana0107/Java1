@@ -66,5 +66,6 @@ public class controlStatement
             i++;
         }
         System.out.println("Total result " + money);
+        obj.close();
     }
 }
