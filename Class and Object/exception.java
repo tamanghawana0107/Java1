@@ -1,4 +1,4 @@
-// PROGRAM for try catch 
+// PROGRAM for try catch, throw
 /*************************************************************/
 // try catch throw and finally
 // throw => This statement allows you to create a custom error.
