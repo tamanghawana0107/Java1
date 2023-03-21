@@ -29,7 +29,8 @@ public class UI {
         Label l2 = new Label("Enter your Password:");
         l2.setBounds(100, 145, 250, 40);
         fr.add(l2);
-        JPasswordField pf = new JPasswordField("Password Please");
+
+        JPasswordField pf = new JPasswordField();
         pf.setBounds(100, 175, 250, 60);
         fr.add(pf);
 
