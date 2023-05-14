@@ -49,5 +49,16 @@ public class App {
             System.out.println(id + "\t" + name);
         }
 
+        //prepared statement
+        PreparedStatement preparedStatement = conn.prepareStatement("SELECT * from new_table Where id = ? AND address =?");
+        preparedStatement.setInt(1,2);
+        preparedStatement.setString(2,"Gathaghar");
+        ResultSet rs = preparedStatement.executeQuery();
+        while(rs.next()){
+            String name = rs.getNString("name");
+            System.out.println(name);
+        }
+
+
     }
 }
