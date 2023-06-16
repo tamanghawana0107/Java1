@@ -10,6 +10,7 @@ public class App {
         Connection conn = DriverManager.getConnection(url,userName,password);
         System.out.println("Connection is success");
 
+
         //select query
         /*Statement stm = conn.createStatement();
         ResultSet rs = stm.executeQuery("SELECT * FROM new_table" );

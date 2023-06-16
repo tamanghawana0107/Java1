@@ -11,6 +11,7 @@ public class Calculator implements ActionListener{
     public static JTextField tf2 = new JTextField();
     public static JButton btn = new JButton();
     public static Calculator c = new Calculator();
+
     
     
     public void frame(){
